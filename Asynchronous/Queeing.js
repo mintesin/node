@@ -50,7 +50,6 @@ queueingState
   .query("SELECT * FROM users")
   .then((result) => console.log(result)); // Log the result of the query
 
-// Execute the queued commands after 2 seconds
 setTimeout(() => {
   queueingState[deactivate]();
 }, 2000);
